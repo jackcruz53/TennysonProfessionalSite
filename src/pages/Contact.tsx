@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
           size="large"
           fullWidth
           startIcon={<LinkedInIcon />}
-          onClick={() => window.open('https://www.linkedin.com/in/jacktennyson/', '_blank')}
+          onClick={() => window.open('https://www.linkedin.com/in/jack-tennyson-86b29919b/', '_blank')}
           sx={{
             py: 1.5,
             borderWidth: 2,

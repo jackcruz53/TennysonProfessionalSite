@@ -26,7 +26,7 @@ const jobs: JobDetails[] = [
   {
     company: 'Actblue',
     role: 'Senior Software Engineer',
-    period: 'Feb 2024 – Present',
+    period: 'Feb 2024 – Feb 2025',
     location: 'Remote',
     narrative:
       "At ActBlue, I've stepped into a role that combines technical leadership with social impact. Working on a platform that processes billions in political donations has given me unique insights into building highly scalable, secure applications. I particularly enjoy mentoring other engineers while tackling complex technical challenges that directly impact democratic participation.",
@@ -150,7 +150,7 @@ const Career: React.FC = () => {
     const subject = 'Interview Request';
     const body =
       "Hi Jack,\n\nI'd like to schedule an interview to discuss a potential role at our company.\n\nBest regards,";
-    window.location.href = `mailto:jack@jacktennyson.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:jackcruztennyson@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

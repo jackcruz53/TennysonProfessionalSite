@@ -3,6 +3,7 @@
   "private": true,
   "homepage": "https://jackcruz53.github.io/TennysonProfessionalSite",
   "version": "0.0.0",
+  "author": "Jack Tennyson <jackcruztennyson@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",
