@@ -8,4 +8,13 @@ export default defineConfig({
     port: 3000
   },
   base: '/TennysonProfessionalSite/',
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/index.js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
+  },
 })
