@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AppBar, Button, Stack, Snackbar } from '@mui/material';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
@@ -8,7 +8,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import EmailIcon from '@mui/icons-material/Email';
 
 const SideNav = styled(AppBar, {
-  shouldForwardProp: prop => prop !== 'isVisible'
+  shouldForwardProp: (prop) => prop !== 'isVisible',
 })<{ isVisible: boolean }>(({ theme, isVisible }) => ({
   width: '80px',
   height: '100vh',
@@ -73,10 +73,10 @@ const Navbar = () => {
 
   const messages = [
     "You're already here! 😄",
-    "Going somewhere? Oh wait... 🤔",
+    'Going somewhere? Oh wait... 🤔',
     "That's where you are! 👀",
     "Click harder, maybe it'll work 😉",
-    "Déjà vu? 🌟",
+    'Déjà vu? 🌟',
   ];
 
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -84,8 +84,8 @@ const Navbar = () => {
   return (
     <>
       <NavTrigger onMouseEnter={handleMouseEnter} />
-      <SideNav 
-        position="fixed" 
+      <SideNav
+        position="fixed"
         isVisible={isVisible}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -141,4 +141,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

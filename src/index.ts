@@ -5,4 +5,4 @@ export * from './components';
 export * from './pages';
 
 // Main App
-export { default as App } from './App'; 
+export { default as App } from './App';

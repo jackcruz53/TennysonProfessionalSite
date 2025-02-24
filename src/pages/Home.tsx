@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Box, Paper } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import maleaJack from '../assets/Malea+Jack_9.20.23-23.jpeg';
 import guardPhoto from '../assets/88957087-8f5f-4618-a666-486f5806c366.jpeg';
@@ -47,10 +47,10 @@ const Home: React.FC = () => {
       <Section>
         <TextContent>
           <Typography paragraph>
-            Hi, I'm Jack Tennyson, a software developer with a passion for creating elegant solutions 
-            to complex problems. I specialize in full-stack development with a focus on React and 
-            TypeScript. When I'm not coding, you can find me exploring the outdoors with my wife 
-            or working on personal projects.
+            Hi, I&apos;m Jack Tennyson, a software developer with a passion for creating elegant
+            solutions to complex problems. I specialize in full-stack development with a focus on
+            React and TypeScript. When I&apos;m not coding, you can find me exploring the outdoors with
+            my wife or working on personal projects.
           </Typography>
         </TextContent>
         <StyledImage src={maleaJack} alt="Jack and Malea Tennyson" />
@@ -60,10 +60,10 @@ const Home: React.FC = () => {
         <StyledImage src={guardPhoto} alt="National Guard Service" />
         <TextContent>
           <Typography paragraph>
-            Beyond software development, I serve in the National Guard, where I've learned valuable 
-            lessons in leadership, teamwork, and performing under pressure. This unique experience 
-            has enhanced my ability to adapt quickly to changing situations and work effectively 
-            in diverse teams.
+            Beyond software development, I serve in the National Guard, where I&apos;ve learned valuable
+            lessons in leadership, teamwork, and performing under pressure. This unique experience
+            has enhanced my ability to adapt quickly to changing situations and work effectively in
+            diverse teams.
           </Typography>
         </TextContent>
       </Section>
@@ -71,9 +71,9 @@ const Home: React.FC = () => {
       <Section>
         <TextContent>
           <Typography paragraph>
-            My journey in software development has been driven by a constant desire to learn and 
-            grow. I believe in writing clean, maintainable code and building applications that 
-            not only work well but are also enjoyable to use. I'm always excited to take on new 
+            My journey in software development has been driven by a constant desire to learn and
+            grow. I believe in writing clean, maintainable code and building applications that not
+            only work well but are also enjoyable to use. I&apos;m always excited to take on new
             challenges and contribute to meaningful projects.
           </Typography>
         </TextContent>
@@ -83,4 +83,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home; 
+export default Home;

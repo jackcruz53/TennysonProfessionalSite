@@ -7,5 +7,5 @@ export const logos = {
   actblue: actblueLogo,
   pnnl: pnnlLogo,
   firstResonance: firstResonanceLogo,
-  quantime: quantimeLogo
-}; 
+  quantime: quantimeLogo,
+};

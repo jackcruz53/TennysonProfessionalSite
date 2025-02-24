@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
-import { ThemeProvider, createTheme, CssBaseline, GlobalStyles, Box } from '@mui/material';
+import { ThemeProvider, createTheme, CssBaseline, GlobalStyles } from '@mui/material';
 import { Layout } from './components';
 import { Home, Career, Skills, Contact } from './pages';
 
@@ -19,7 +19,7 @@ const darkTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundImage: 
+          backgroundImage:
             'radial-gradient(circle at 50% 0%, rgba(24, 98, 175, 0.15), rgba(0, 0, 0, 0) 50%), ' +
             'radial-gradient(circle at 100% 50%, rgba(144, 202, 249, 0.15), rgba(0, 0, 0, 0) 50%), ' +
             'radial-gradient(circle at 0% 50%, rgba(24, 98, 175, 0.15), rgba(0, 0, 0, 0) 50%)',
@@ -73,6 +73,6 @@ const App: React.FC = () => {
       </ThemeProvider>
     </Router>
   );
-}
+};
 
-export default App; 
+export default App;

@@ -14,6 +14,6 @@ const About: React.FC = () => {
       </Paper>
     </Box>
   );
-}
+};
 
-export default About; 
+export default About;

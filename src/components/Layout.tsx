@@ -23,9 +23,7 @@ const Layout: React.FC = () => {
     <Box sx={{ minHeight: '100vh' }}>
       <Navbar />
       <Fade in={!loading} timeout={300}>
-        <Box sx={{ ml: '10px' }}>
-          {showContent && <Outlet />}
-        </Box>
+        <Box sx={{ ml: '10px' }}>{showContent && <Outlet />}</Box>
       </Fade>
       <Fade in={loading} timeout={300}>
         <Box sx={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
@@ -36,4 +34,4 @@ const Layout: React.FC = () => {
   );
 };
 
-export default Layout; 
+export default Layout;

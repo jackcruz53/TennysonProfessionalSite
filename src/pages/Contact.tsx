@@ -27,7 +27,7 @@ const Title = styled(Typography)(({ theme }) => ({
     height: '4px',
     backgroundColor: theme.palette.primary.main,
     borderRadius: '2px',
-  }
+  },
 }));
 
 const Message = styled(Typography)(({ theme }) => ({
@@ -42,26 +42,27 @@ const Message = styled(Typography)(({ theme }) => ({
 
 const Contact: React.FC = () => {
   const handleEmailClick = () => {
-    const subject = "Interview Request";
-    const body = "Hi Jack,\n\nI'd like to schedule an interview to discuss potential opportunities. I was impressed by your portfolio and would love to learn more about your experience.\n\nBest regards,";
+    const subject = 'Interview Request';
+    const body =
+      "Hi Jack,\n\nI'd like to schedule an interview to discuss potential opportunities. I was impressed by your portfolio and would love to learn more about your experience.\n\nBest regards,";
     window.location.href = `mailto:jackcruztennyson@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
     <StyledContainer>
       <Title variant="h3" align="center" color="primary">
-        Let's Connect
+        Let&apos;s Connect
       </Title>
 
       <Message>
-        Thank you for your interest in connecting! I'm always excited to discuss new opportunities
+        Thank you for your interest in connecting! I&apos;m always excited to discuss new opportunities
         and collaborate with fellow developers.
       </Message>
 
-      <Stack 
-        spacing={3} 
+      <Stack
+        spacing={3}
         alignItems="center"
-        sx={{ 
+        sx={{
           maxWidth: '400px',
           margin: '0 auto',
         }}
@@ -72,12 +73,12 @@ const Contact: React.FC = () => {
           fullWidth
           startIcon={<LinkedInIcon />}
           onClick={() => window.open('https://www.linkedin.com/in/jacktennyson/', '_blank')}
-          sx={{ 
+          sx={{
             py: 1.5,
             borderWidth: 2,
             '&:hover': {
               borderWidth: 2,
-            }
+            },
           }}
         >
           Connect on LinkedIn
@@ -98,4 +99,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
