@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline, GlobalStyles, Box } from '@mui/material';
 import { Layout } from './components';
 import { Home, Career, Skills, Contact } from './pages';
@@ -57,19 +57,21 @@ const globalStyles = {
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
-      <GlobalStyles styles={globalStyles} />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="career" element={<Career />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Route>
-      </Routes>
-    </ThemeProvider>
+    <Router basename="/TennysonProfessionalSite">
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <GlobalStyles styles={globalStyles} />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="career" element={<Career />} />
+            <Route path="skills" element={<Skills />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Route>
+        </Routes>
+      </ThemeProvider>
+    </Router>
   );
 }
 
