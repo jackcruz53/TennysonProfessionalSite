@@ -1,50 +1,107 @@
-# React + TypeScript + Vite
+# Tennyson Professional Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal professional website built with React, TypeScript, and Material-UI, featuring a responsive design and smooth transitions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive layout with animated navigation
+- Interactive skills word cloud
+- Professional experience timeline
+- Contact information
+- Dark theme with custom styling
+- Smooth page transitions
+- CI/CD with GitHub Actions
+- Automated linting and type checking
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before you begin, ensure you have installed:
+- Node.js (v16 or higher)
+- npm (v8 or higher)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+```bash
+git clone git@github.com:jackcruz53/TennysonProfessionalSite.git
+cd TennysonProfessionalSite
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+## Development
+
+To start the development server:
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:3000`
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Create production build
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
+- `npm run format` - Format code with Prettier
+
+## Project Structure
+
+```
+src/
+├── assets/         # Images and static assets
+├── components/     # Reusable components
+│   ├── Layout.tsx
+│   ├── LoadingScreen.tsx
+│   └── Navbar.tsx
+├── pages/          # Page components
+│   ├── Home.tsx
+│   ├── Career.tsx
+│   ├── Skills.tsx
+│   └── Contact.tsx
+└── App.tsx         # Main application component
+```
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration and deployment. The pipeline:
+- Runs on push to main and pull requests
+- Checks code formatting
+- Runs ESLint
+- Verifies TypeScript types
+- Builds the project
+
+## Technologies Used
+
+- React 18
+- TypeScript
+- Vite
+- Material-UI
+- React Router
+- D3.js (for word cloud)
+- ESLint
+- Prettier
+- GitHub Actions
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+## Contact
+
+Jack Tennyson - [Your Email or Contact Info]
+
+Project Link: [https://github.com/jackcruz53/TennysonProfessionalSite](https://github.com/jackcruz53/TennysonProfessionalSite)
