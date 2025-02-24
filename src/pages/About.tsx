@@ -9,7 +9,7 @@ const About: React.FC = () => {
       </Typography>
       <Paper sx={{ p: 3 }}>
         <Typography paragraph>
-          Frontend Software Engineer with a passion for creating elegant user experiences.
+          Frontend Software Engineer with a passion for creating elegant user experiencess.
         </Typography>
       </Paper>
     </Box>
